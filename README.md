@@ -1,4 +1,4 @@
-# Narender Surabhi — Staff ML Engineer / AI Solutions Architect
+# Narender Surabhi — Senior ML Engineer / AI Solutions Architect
 
 **Healthcare AI/ML · FWA analytics · GenAI/RAG/Agentic · AWS SageMaker/Bedrock · MLflow · PySpark/Spark**
 
