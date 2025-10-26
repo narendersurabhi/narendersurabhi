@@ -1,6 +1,6 @@
 # Narender Surabhi — Senior ML Engineer / AI Solutions Architect
 
-Healthcare AI/ML · FWA analytics · GenAI/RAG/Agentic · AWS SageMaker/Bedrock · MLflow · Spark
+Healthcare AI/ML · FWA · GenAI/RAG/Agentic · AWS SageMaker/Bedrock · MLflow · PySpark
 
 - Delivered LLM + RAG features that cut reviewer time by >30% and reduced improper payments by millions (est.).
 - Built HIPAA-aligned ML pipelines with 99.9% service availability.
