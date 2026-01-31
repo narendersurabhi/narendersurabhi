@@ -16,7 +16,7 @@ I build **production-oriented ML + LLM systems** with a strong bias toward:
 
 ---
 
-## 🧭 Start here (portfolio)
+## Portfolio
 
 **If you only click one:** **MLOps Release Gate Agent** — planner/executor + policy gating + MLflow + Prometheus + Jaeger, deployed “EKS-style” using kind + Helm.  
 (Everything is runnable locally.)
