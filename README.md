@@ -21,34 +21,41 @@ I build **production-oriented ML + LLM systems** with a strong bias toward:
 **If you only click one:** **MLOps Release Gate Agent** - planner/executor + policy gating + MLflow + Prometheus + Jaeger, deployed “EKS-style” using kind + Helm.  
 (Everything is runnable locally.)
 
-### 1) MLOps Release Gate Agent (Kubernetes-first “release governance” demo)
+### 1) Goal-Driven Agentic Workflow Engine (AWE)  
+Production-style multi-agent workflow platform with hierarchical **Planner → Worker → Critic/Policy** orchestration, typed task DAG execution, MCP tool-calling, retry/DLQ recovery on Redis Streams, and schema-validated tool contracts. Built for local and Kubernetes deployment with **HPA/KEDA**, shared artifact/document handling (**filesystem + optional S3 fallback**), and full observability via **OpenTelemetry, Prometheus, Grafana, Loki, and Jaeger**.  
+Repo: https://github.com/narendersurabhi/planner-executer-agentic-platform  
+Quick run:
+- `cp .env.example .env && make up`
+- `make test && make lint && make typecheck`
+
+### 2) MLOps Release Gate Agent (Kubernetes-first “release governance” demo)
 Local release-gating agent that mirrors production-style deployment using **kind + Helm**, with **planning/execution**, **policy engine**, **MLflow integration**, and **Prometheus + OpenTelemetry → Jaeger**.  
 Repo: https://github.com/narendersurabhi/mlops-release-gate-agent  
 Quick run:
 - `make kind-up && make docker-build && make kind-load && make helm-install`
 - `make smoke`
 
-### 2) ML Platform Release Gates (model governance reference system)
+### 3) ML Platform Release Gates (model governance reference system)
 Reference system for **model governance & promotion**: train/eval/promote → artifact store/registry → FastAPI serving → Prometheus/Grafana. Includes explicit gate logic and promotion states.  
 Repo: https://github.com/narendersurabhi/ml-platform-release-gates  
 Quick run:
 - `make setup && make pipeline && make run`  
   or `cp .env.example .env && make compose-up`
 
-### 3) MCP Control Plane (secure tool access for agents)
+### 4) MCP Control Plane (secure tool access for agents)
 Production-grade **MCP server** with **stdio + HTTP transport**, **OpenTelemetry + Prometheus**, and **bearer auth + scope-based policy** (e.g., `X-MCP-Scope`). Includes Docker/Compose and Helm assets.  
 Repo: https://github.com/narendersurabhi/mcp-control-plane  
 Quick run:
 - `make install && make run-stdio`
 - HTTP: `export MCP_MODE=http MCP_BEARER_TOKEN=devtoken && python -m mcp_cp.server`
 
-### 4) LangChain Production Starter (FastAPI + RAG + agent demo)
+### 5) LangChain Production Starter (FastAPI + RAG + agent demo)
 Production-ready **LangChain + FastAPI** starter with **testable chains**, FAISS-backed **RAG**, and a **tool-using agent**. Supports an offline deterministic `LLM_PROVIDER=fake` mode and exposes `/metrics`, `/healthz`, `/readyz`.  
 Repo: https://github.com/narendersurabhi/langchain-prod-starter  
 Quick run:
 - `cp .env.example .env && make setup && make run`
 
-### 5) LLM Customization Ops (LoRA/QLoRA + DPO + eval gates)
+### 6) LLM Customization Ops (LoRA/QLoRA + DPO + eval gates)
 End-to-end LLM customization repo demonstrating **LoRA/QLoRA fine-tuning**, **DPO preference tuning**, optional distillation, plus production features: **FastAPI**, **OpenTelemetry**, **Prometheus**, CI gates, and offline fixtures for repeatable runs.  
 Repo: https://github.com/narendersurabhi/llm-customization-ops  
 Quick run:
