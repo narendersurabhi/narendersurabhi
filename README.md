@@ -1,6 +1,6 @@
 # Narender Rao Surabhi
 
-**ML Engineer | AI Solutions Architect | GenAI (RAG + Agents) | MLOps Platform | AWS (SageMaker/Bedrock)**
+**ML Engineer | Applied AI Engineer | GenAI (RAG + Agents) | MLOps Platform | AWS (SageMaker/Bedrock)**
 
 I design and ship **production-grade ML and LLM systems** with a focus on:
 - **Release governance** (evaluation gates, policy checks, controlled promotion)
@@ -10,7 +10,7 @@ I design and ship **production-grade ML and LLM systems** with a focus on:
 > All public repositories use educational, synthetic, or non-sensitive data only.
 
 ## What I’m best aligned for
-- Senior/Staff ML Platform Engineer
+- Senior ML Platform Engineer
 - AI Platform Engineer
 - Applied AI Engineer (RAG + agentic systems)
 
