@@ -1,113 +1,98 @@
 # Narender Rao Surabhi
 
-**ML Engineer | Applied AI Engineer | GenAI (RAG + Agents) | MLOps Platform | AWS (SageMaker/Bedrock)**
+**Applied AI Engineer | ML Platform | Agentic Workflows | MLOps**
 
-I design and ship **production-grade ML and LLM systems** with a focus on:
-- **Release governance** (evaluation gates, policy checks, controlled promotion)
-- **Observability by default** (metrics, traces, structured logs)
-- **Local-first workflows** that map cleanly to cloud/Kubernetes production patterns
+I build production-grade ML and AI systems across workflow orchestration, RAG and agent runtimes, release governance, and Kubernetes-native platform operations.
+
+My work is centered on:
+- Agentic workflow platforms with typed execution contracts, tools, capabilities, memory, and triggers
+- LLM and RAG systems with evaluation, observability, and operational guardrails
+- ML platform and release pipelines with measurable quality gates and controlled promotion
+- Local-first developer workflows that map cleanly to cloud and Kubernetes production patterns
 
 > All public repositories use educational, synthetic, or non-sensitive data only.
 
-## What I’m best aligned for
-- Senior ML Platform Engineer
-- AI Platform Engineer
-- Applied AI Engineer (RAG + agentic systems)
+## What I build
 
-## Featured repositories
+- AI workflow platforms and orchestration runtimes
+- Tool-using agent and retrieval-augmented systems
+- ML and LLM release governance pipelines
+- Observability-first platform services
+
+## Featured Projects
 
 ### 1) Agentic Workflow Studio
 A full-stack platform for authoring and running AI-powered workflows through chat and a visual DAG editor, backed by typed execution contracts, reusable capabilities, memory, triggers, and Kubernetes-native orchestration.
 
-**Highlights:**
+**Highlights**
 - Chat, Compose, and Workflow Studio surfaces for conversational, goal-driven, and manually authored workflows
 - Typed planner/worker runtime with reusable capabilities, memory integration, control-flow nodes, retries, and DLQ recovery
-- Kubernetes-ready scaling patterns, artifact/document handling, and observability with Prometheus, Grafana, Loki, and Jaeger
+- Kubernetes-ready scaling, artifact/document handling, and observability with Prometheus, Grafana, Loki, and Jaeger
 
 Repo: <https://github.com/narendersurabhi/planner-executer-agentic-platform>
 
-Quick start:
-```bash
-cp .env.example .env && make up
-make test && make lint && make typecheck
-```
-
 ### 2) MLOps Release Gate Agent
-A Kubernetes-first release governance demo showing plan/execute workflows, policy gating, MLflow integration, and observability with Prometheus + OpenTelemetry + Jaeger.
+A Kubernetes-first release governance project focused on controlled promotion, plan/execute workflows, policy gating, and observable ML operations.
+
+**Highlights**
+- Release-gate workflow for evaluation, approval, and promotion
+- MLflow-backed artifacts and runtime decisioning
+- Prometheus and OpenTelemetry instrumentation with Jaeger tracing
 
 Repo: <https://github.com/narendersurabhi/mlops-release-gate-agent>
 
-Quick start:
-```bash
-make kind-up && make docker-build && make kind-load && make helm-install
-make smoke
-```
+### 3) MCP Control Plane
+A production-style MCP server with multiple transports, auth policy controls, and observability built in from the start.
 
-### 3) ML Platform Release Gates
-Reference implementation for model governance and promotion:
-**train/evaluate/promote → registry/artifact flow → FastAPI serving → Prometheus/Grafana**.
-
-Repo: <https://github.com/narendersurabhi/ml-platform-release-gates>
-
-Quick start:
-```bash
-make setup && make pipeline && make run
-# or
-cp .env.example .env && make compose-up
-```
-
-### 4) MCP Control Plane
-Production-grade MCP server with stdio + HTTP transport, OpenTelemetry + Prometheus, and scope-based bearer auth policy controls.
+**Highlights**
+- Stdio and HTTP MCP transport support
+- Scope-based bearer-token authorization model
+- OpenTelemetry and Prometheus instrumentation for runtime visibility
 
 Repo: <https://github.com/narendersurabhi/mcp-control-plane>
 
-Quick start:
-```bash
-make install && make run-stdio
-# HTTP mode
-export MCP_MODE=http MCP_BEARER_TOKEN=devtoken
-python -m mcp_cp.server
-```
+### 4) LLM Customization Ops
+An end-to-end repository for LLM customization workflows spanning supervised fine-tuning, preference optimization, evaluation, and serving.
 
-### 5) LangChain Production Starter
-FastAPI + RAG + tool-using agent starter with testable chain patterns, FAISS retrieval, offline deterministic `LLM_PROVIDER=fake` mode, and `/metrics`/`/healthz`/`/readyz` endpoints.
-
-Repo: <https://github.com/narendersurabhi/langchain-prod-starter>
-
-Quick start:
-```bash
-cp .env.example .env && make setup && make run
-```
-
-### 6) LLM Customization Ops
-End-to-end LLM customization repo covering LoRA/QLoRA SFT, DPO preference tuning, evaluation gates, and production API/observability patterns.
+**Highlights**
+- LoRA and QLoRA supervised fine-tuning flows
+- DPO-style preference optimization and evaluation gates
+- Production-facing API and observability patterns for model serving
 
 Repo: <https://github.com/narendersurabhi/llm-customization-ops>
 
-Quick start:
-```bash
-make setup && make lint && make type && make test
-make train-sft && make train-qlora && make train-dpo && make eval && make serve
-```
+### 5) ML Platform Release Gates
+A reference implementation for model governance and promotion across training, evaluation, registry flow, and serving.
 
-### Bonus: AWS MLOps Starter
-Template pipeline for train → test → containerize → FastAPI on Lambda container, with CI and basic drift checks.
+**Highlights**
+- Train, evaluate, promote, and serve workflow
+- Artifact and model-registry oriented release path
+- FastAPI serving with Prometheus and Grafana-compatible metrics
 
-Repo: <https://github.com/narendersurabhi/mlops-starter-aws>
+Repo: <https://github.com/narendersurabhi/ml-platform-release-gates>
 
-## Engineering approach
-- **Contracts-first design** for predictable component boundaries
-- **Evidence-based promotion** using measurable release criteria
-- **Operability as a requirement** (not an afterthought)
-- **Reproducibility in CI** through fixtures and deterministic modes
+## Selected Strengths
 
-## Core stack
-- **Platform/API:** Python, FastAPI, Docker, Kubernetes (kind/Helm), MLflow
-- **Observability:** OpenTelemetry, Prometheus, Grafana, Jaeger
-- **LLM systems:** RAG patterns, tool-calling agents, FAISS-based retrieval
-- **Data/ML:** PySpark, XGBoost, PyTorch, classic ML pipelines
+- Contracts-first design for predictable component boundaries
+- Evidence-based release decisions using measurable criteria
+- Operability as a hard requirement, not a follow-on task
+- Reproducible local and CI workflows with deterministic test paths
+
+## Core Stack
+
+- **Platform and API:** Python, FastAPI, Docker, Kubernetes, Helm, MLflow
+- **Observability:** OpenTelemetry, Prometheus, Grafana, Jaeger, Loki
+- **LLM systems:** RAG, tool-calling agents, workflow orchestration, evaluation pipelines
+- **ML and data:** PyTorch, XGBoost, PySpark, classical ML pipelines
+
+## Open To
+
+- Applied AI Engineer
+- AI Platform Engineer
+- ML Platform Engineer
 
 ## Connect
+
 - LinkedIn: <https://www.linkedin.com/in/narendersurabhi>
 - GitHub: <https://github.com/narendersurabhi>
 - Location: Okemos, MI
