@@ -31,7 +31,7 @@ A full-stack platform for authoring and running AI-powered workflows through cha
 - Typed planner/worker runtime with reusable capabilities, memory integration, control-flow nodes, retries, and DLQ recovery
 - Kubernetes-ready scaling, artifact/document handling, and observability with Prometheus, Grafana, Loki, and Jaeger
 
-Repo: <https://github.com/narendersurabhi/planner-executer-agentic-platform>
+Repo: <https://github.com/narendersurabhi/agentic-workflow-studio>
 
 ### 2) MLOps Release Gate Agent
 A Kubernetes-first release governance project focused on controlled promotion, plan/execute workflows, policy gating, and observable ML operations.
