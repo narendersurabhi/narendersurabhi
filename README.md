@@ -16,13 +16,13 @@ I design and ship **production-grade ML and LLM systems** with a focus on:
 
 ## Featured repositories
 
-### 1) Goal-Driven Agentic Workflow Engine (AWE)
-A production-style multi-agent workflow platform with hierarchical **Planner → Worker → Critic/Policy** orchestration, typed DAG execution, MCP tool-calling, retry/DLQ recovery on Redis Streams, and schema-validated tool contracts.
+### 1) Agentic Workflow Studio
+A full-stack platform for authoring and running AI-powered workflows through chat and a visual DAG editor, backed by typed execution contracts, reusable capabilities, memory, triggers, and Kubernetes-native orchestration.
 
 **Highlights:**
-- Kubernetes-ready scaling patterns (HPA/KEDA)
-- Artifact/document handling with filesystem + optional S3 fallback
-- Full observability via OpenTelemetry, Prometheus, Grafana, Loki, and Jaeger
+- Chat, Compose, and Workflow Studio surfaces for conversational, goal-driven, and manually authored workflows
+- Typed planner/worker runtime with reusable capabilities, memory integration, control-flow nodes, retries, and DLQ recovery
+- Kubernetes-ready scaling patterns, artifact/document handling, and observability with Prometheus, Grafana, Loki, and Jaeger
 
 Repo: <https://github.com/narendersurabhi/planner-executer-agentic-platform>
 
