@@ -1,12 +1,13 @@
 # Narender Rao Surabhi
 
-**Applied AI Engineer | ML Platform | Agentic Workflows | MLOps**
+**Applied AI Engineer | ML Platform | Agentic Workflows | LLM Pretraining, Fine-Tuning, RLHF | MLOps**
 
-I build production-grade ML and AI systems across workflow orchestration, RAG and agent runtimes, release governance, and Kubernetes-native platform operations.
+I build production-grade ML and AI systems across workflow orchestration, RAG and agent runtimes, LLM pretraining and post-training, release governance, and Kubernetes-native platform operations.
 
 My work is centered on:
 - Agentic workflow platforms with typed execution contracts, tools, capabilities, memory, and triggers
 - LLM and RAG systems with evaluation, observability, and operational guardrails
+- LLM training and adaptation workflows including pretraining, supervised fine-tuning, and RLHF-style preference optimization
 - ML platform and release pipelines with measurable quality gates and controlled promotion
 - Local-first developer workflows that map cleanly to cloud and Kubernetes production patterns
 
@@ -16,6 +17,7 @@ My work is centered on:
 
 - AI workflow platforms and orchestration runtimes
 - Tool-using agent and retrieval-augmented systems
+- LLM pretraining, fine-tuning, and RLHF-style alignment workflows
 - ML and LLM release governance pipelines
 - Observability-first platform services
 
@@ -52,7 +54,7 @@ A production-style MCP server with multiple transports, auth policy controls, an
 Repo: <https://github.com/narendersurabhi/mcp-control-plane>
 
 ### 4) LLM Customization Ops
-An end-to-end repository for LLM customization workflows spanning supervised fine-tuning, preference optimization, evaluation, and serving.
+An end-to-end repository for LLM customization workflows spanning fine-tuning, RLHF-style preference optimization, evaluation, and serving.
 
 **Highlights**
 - LoRA and QLoRA supervised fine-tuning flows
@@ -74,6 +76,7 @@ Repo: <https://github.com/narendersurabhi/ml-platform-release-gates>
 ## Selected Strengths
 
 - Contracts-first design for predictable component boundaries
+- LLM lifecycle coverage from training and post-training through evaluation and serving
 - Evidence-based release decisions using measurable criteria
 - Operability as a hard requirement, not a follow-on task
 - Reproducible local and CI workflows with deterministic test paths
@@ -82,7 +85,7 @@ Repo: <https://github.com/narendersurabhi/ml-platform-release-gates>
 
 - **Platform and API:** Python, FastAPI, Docker, Kubernetes, Helm, MLflow
 - **Observability:** OpenTelemetry, Prometheus, Grafana, Jaeger, Loki
-- **LLM systems:** RAG, tool-calling agents, workflow orchestration, evaluation pipelines
+- **LLM systems:** pretraining concepts, supervised fine-tuning, RLHF and preference optimization, RAG, tool-calling agents, workflow orchestration, evaluation pipelines
 - **ML and data:** PyTorch, XGBoost, PySpark, classical ML pipelines
 
 ## Open To
