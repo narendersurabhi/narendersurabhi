@@ -1,6 +1,6 @@
 # Narender Rao Surabhi
 
-**Applied AI Engineer | ML Platform | Agentic Workflows | LLM Pretraining, Fine-Tuning, RLHF | MLOps**
+**Applied AI Engineering | ML Platforms | Agentic Workflows | LLM Pretraining, Fine-Tuning, RLHF | MLOps**
 
 I build production-grade ML and AI systems across workflow orchestration, RAG and agent runtimes, LLM pretraining and post-training, release governance, and Kubernetes-native platform operations.
 
@@ -87,12 +87,6 @@ Repo: <https://github.com/narendersurabhi/ml-platform-release-gates>
 - **Observability:** OpenTelemetry, Prometheus, Grafana, Jaeger, Loki
 - **LLM systems:** pretraining concepts, supervised fine-tuning, RLHF and preference optimization, RAG, tool-calling agents, workflow orchestration, evaluation pipelines
 - **ML and data:** PyTorch, XGBoost, PySpark, classical ML pipelines
-
-## Open To
-
-- Applied AI Engineer
-- AI Platform Engineer
-- ML Platform Engineer
 
 ## Connect
 
